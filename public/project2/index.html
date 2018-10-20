@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Homepage Mobile Web Specialist">
-    <title>Carolina Ratna Sari - MWS</title>
-    <link rel="stylesheet" href="style.css" media="all">
+	<title>Lokasi Istimewa dengan Mapbox</title>
+	<link rel="stylesheet" href="../style.css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"integrity="sha512nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 </head>
+
 <body>
   <div class="container">
     <div class='menu'>
-      <img src="images/logo.png" alt="Foto Logo">
+      <img src="../images/logo.png" alt="Foto Logo">
     </div>
     <div class='sidebar'>
-      <img src="images/sidebar.jpg" alt="Foto Sidebar">
+      <img src="../images/sidebar.jpg" alt="Foto Sidebar">
     </div>
-    <div class='konten'>
-      <a href="project1/add2numbers.html">Menjumlahkan 2 angka</a>
-    </div>
-    <div class='konten'>
-      <a href="project2/index.html">Lokasi istimewa dengan Mapbox</a>
-    </div>
-    <div class='konten'>
-      <a href="">Konten 3</a>
+    <div class='konten3'>
+      <div id="mapid">
+        
+      </div>
     </div>
     <div class='footer'>&copy; 2018 Carolina Ratna Sari</div>
   </div>
@@ -41,5 +40,5 @@
   };
   firebase.initializeApp(config);
 </script>
-
+<script src="mapbox.js"></script>
 </html>

@@ -1,6 +1,8 @@
 .container {
 display: grid;
-width: 100%;
+margin-left: 20%;
+margin-right: 20%;
+height: 100%;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: 50px 100px 100px 100px 50px;
 grid-gap: 4px;
@@ -25,11 +27,38 @@ grid-row-end: 5;
 grid-column-end: 1/2;
 }
 
+.sidebar img {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100px;
+}
+
 .konten {
 background: #AFEEEE;
 text-align: center;
 font-family: Garamond;
 grid-column: 2/5;
+}
+
+.konten3 {
+background: #AFEEEE;
+text-align: center;
+font-family: Garamond;
+grid-column: 2/5;
+height: 100%;
+}
+
+.konten1 {
+background: #AFEEEE;
+text-align: center;
+font-family: Garamond;
+grid-column: 2/5;
+
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+border:50px solid rgba(0,0,0,.2);
 }
 
 a {
@@ -41,6 +70,12 @@ a {
 a:hover {
 	color: #2F4F4F;
 }
+
+input {
+	font-size: large
+}
+
+#mapid { height: 180px; }
 
 .footer {
 background: #008080;

@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Homepage Mobile Web Specialist">
-    <title>Carolina Ratna Sari - MWS</title>
-    <link rel="stylesheet" href="style.css" media="all">
+	<title>Menjumlahkan 2 Angka</title>
+	<link rel="stylesheet" href="../style.css" media="all">
 </head>
+
 <body>
   <div class="container">
     <div class='menu'>
-      <img src="images/logo.png" alt="Foto Logo">
+      <img src="../images/logo.png" alt="Foto Logo">
     </div>
     <div class='sidebar'>
-      <img src="images/sidebar.jpg" alt="Foto Sidebar">
+      <img src="../images/sidebar.jpg" alt="Foto Sidebar">
     </div>
     <div class='konten'>
-      <a href="project1/add2numbers.html">Menjumlahkan 2 angka</a>
+      <h1>Tambahkan Dua angka</h1>
+    </div>
+    <div class='konten1 calc'>
+      <input type="text" size="5" placeholder="0" onkeyup="kalkulator()" />
+		+
+		<input type="text" size="5" placeholder="0" onkeyup="kalkulator()"/>
+		<button> = </button>
+		<input type="text" size="5" readonly />
     </div>
     <div class='konten'>
-      <a href="project2/index.html">Lokasi istimewa dengan Mapbox</a>
-    </div>
-    <div class='konten'>
-      <a href="">Konten 3</a>
+      <a href="../index.html">Kembali</a>
     </div>
     <div class='footer'>&copy; 2018 Carolina Ratna Sari</div>
   </div>
@@ -41,5 +46,5 @@
   };
   firebase.initializeApp(config);
 </script>
-
+<script src="add2numbers.js"></script>
 </html>
